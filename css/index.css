@@ -1,0 +1,107 @@
+.card{
+    border-radius: 15px;
+}
+
+  
+  .tealgr{
+    background-image: linear-gradient(to right bottom, #00fa69, #00ef8b, #00e3a4, #00d6b4, #11c7bb);
+    animation: gradient 2.5s ease infinite;
+    background-size: 300% 300%;
+  }
+  
+  .browngr{
+    background-image: linear-gradient(to right bottom, #6e3200, #593900, #423e00, #283f00, #003f09);
+    animation: gradient 2.5s ease infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  .redgr{
+    background-image: linear-gradient(to right top, #c20000, #d00021, #db003a, #e50052, #eb126a);
+    animation: gradient 2.5s ease infinite;
+    background-size: 300% 300%;
+  }
+  
+  @keyframes gradient { 
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+  
+  /* Cool infinite background scrolling animation.
+   * Twitter: @kootoopas
+   */
+  /* Exo thin font from Google. */
+  @import url(https://fonts.googleapis.com/css?family=Exo:100);
+  /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+  /* Animations */
+  @-webkit-keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+  @-moz-keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+  @-o-keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+  @keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+  @-webkit-keyframes bg-scrolling {
+    0% {
+      background-position: 50px 50px;
+    }
+  }
+  @-moz-keyframes bg-scrolling {
+    0% {
+      background-position: 50px 50px;
+    }
+  }
+  @-o-keyframes bg-scrolling {
+    0% {
+      background-position: 50px 50px;
+    }
+  }
+  @keyframes bg-scrolling {
+    0% {
+      background-position: 50px 50px;
+    }
+  }
+  /* Main styles */
+  body {
+    margin-top: 1.5rem;
+    color: #999;
+    font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+    text-align: center;
+    /* img size is 50x50 */
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+    -webkit-animation: bg-scrolling-reverse .92s infinite;
+    /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse .92s infinite;
+    /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse .92s infinite;
+    /* Opera 12+ */
+    animation: bg-scrolling-reverse .92s infinite;
+    /* IE 10+ */
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  body::before {
+    content: " GRUPO L.L.A.O. ";
+    font-size: 300%;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  
+  

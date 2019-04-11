@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--Style css custom-->
+      <link rel="stylesheet" href="/css/style.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+      <div id="app">
+        <h4 id="base" class="dis">TodoEnPalma</h4>
+        <div id="bar" class="barstyle brown wt">
+          <div class="container">
+            <div class="row">
+                <div class="col s12 center">
+                    <img id="logo" src="img/todoenpalma.svg" alt="logo" class="logo">
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="botones center">
+                        <a id="toyashop" class="waves-effect waves-light btn-flat white-text" href="maril.html">Maril</a>
+                        <a id="todoenpalma" class="waves-effect waves-light btn-flat white-text" href="toyashop.html">Toya Shop</a>
+                    </div>
+                </div>
+          </div>
+         
+        </div>
+        <div class="container  upb">
+              <div class="row">
+                      <div id="cards-content" class="col s12 cards-container ">
+                          <product-card
+                              v-for="(producto, index) in productos"
+                              :key="producto.id"
+                              :id="producto.id"
+                              :img="producto.img"
+                              :title="producto.title"
+                              :price="producto.price"
+                              :about="producto.about">
+                          </product-card>
+                            
+                      </div>
+              </div>
+        </div>
+        <div id="modal1" class="modal modalt modal-fixed-footer browng">
+            <div class="modal-content ">
+                
+              <div class="row">
+                <div class="col s12  materialboxed center mt">
+                    <img id="image1" class=" slideimg z-depth-4 "/> 
+                </div>
+              </div>
+                <div class="row">
+                  <a id="prec" class="waves-effect waves-dark btn-flat col s1 center"><i class="material-icons left">arrow_back_ios</i></a>
+                <div class="col s10 center"><h5 class="nm">{{titulo}}</h5></div>
+                  <a id="suiv" class="waves-effect waves-dark btn-flat col s1 center"><i class="material-icons right">arrow_forward_ios</i></a>
+                 
+                  <h5 class="col s12 green-text pdt">${{ precio }}</h5>
+                  <p class="col s12 pdt">{{ descripcion }}</p>
+                </div>
+                  
+              
+            </div>
+            <div class="modal-footer white">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+            </div>
+          </div>
+      </div>
+      <br>
+
+
+      <footer class="page-footer grey darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Todo En Palma</h5>
+                <p class="grey-text text-lighten-4">Artesanias hechas de palma</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Tiendas</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="toyashop.html">Toya Shop</a></li>
+                  <li><a class="grey-text text-lighten-3" href="maril.html">Maril</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2019 Maril
+          <a class="grey-text text-lighten-4 right inverted ml" href="https://www.instagram.com/grupollao_/"><img src="img/instagram.png" alt=""></a>
+          <a class="grey-text text-lighten-4 right inverted ml" href="https://www.facebook.com/TODO-En-PALMA-914545368747012/"><img src="img/facebook.png" alt=""></a>
+          </div>
+        </div>
+      </footer>
+      
+
+        
+      <!--Firebase scripts-->
+      <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+       <!--JQuery plugin-->
+       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!--JavaScript app code-->
+      <script src="/js/app.js"></script>
+      <script src="/js/slider.js"></script>
+      
+     
+
+    </body>
+  </html>
