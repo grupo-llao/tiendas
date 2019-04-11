@@ -30,7 +30,7 @@ $(document).ready(function(){
        }
     });
     $( "#toyashop" ).click(function() {
-      $('#logo').attr('src',"/img/toyashop.svg") ;
+      $('#logo').attr('src',"img/toyashop.svg") ;
       $("#bar").removeClass( "brown" ).removeClass( "teal" ).addClass( "red" );
       $(".botones .dis").removeClass( "dis" );
       $(this).addClass( "dis" );
@@ -45,7 +45,7 @@ $(document).ready(function(){
     });
   });
   $( "#todoenpalma" ).click(function() {
-    $('#logo').attr('src',"/img/todoenpalma.svg") ;
+    $('#logo').attr('src',"img/todoenpalma.svg") ;
     $("#bar").removeClass( "teal" ).removeClass( "red" ).addClass( "brown" );
     $(".botones .dis").removeClass( "dis" );
       $(this).addClass( "dis" );
@@ -62,7 +62,7 @@ $(document).ready(function(){
 
 
 $( "#maril" ).click(function() {
-  $('#logo').attr('src',"/img/maril.svg") ;
+  $('#logo').attr('src',"img/maril.svg") ;
   $("#bar").removeClass( "brown" ).removeClass( "red" ).addClass( "teal" );
   $(".botones .dis").removeClass( "dis" );
       $(this).addClass( "dis" );
