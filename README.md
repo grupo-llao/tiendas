@@ -1,2 +1,0 @@
-# tiendas
-pagina
