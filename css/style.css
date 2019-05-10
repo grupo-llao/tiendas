@@ -5,7 +5,7 @@
   margin-bottom: 30px !important;
 }
 #bar{
-  transition: all .9s ease-in;
+  transition: background-color .2s ease-in;
 }
 .dis{
   display: none;
@@ -42,7 +42,7 @@ body{
   border-style: solid;
   border-width: 5px;
   border-color: #00bfa5;
-  transition: all .9s ease-in;
+  transition: background-color .2s ease-in;
 }
 .upr{
   margin-top: -200px;
@@ -50,7 +50,7 @@ body{
   border-style: solid;
   border-width: 5px;
   border-color: #d50000;
-  transition: all .9s ease-in;
+  transition: background-color .2s ease-in;
 }
 .upb{
   margin-top: -200px;
@@ -58,7 +58,7 @@ body{
   border-style: solid;
   border-width: 5px;
   border-color: #795548;
-  transition: all .9s ease-in;
+  transition: background-color .2s ease-in;
 }
   .cards-container .card {
     display: inline-block;
